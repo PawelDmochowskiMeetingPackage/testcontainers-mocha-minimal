@@ -1,0 +1,22 @@
+{
+  "name": "testcontainers-mocha-minimal",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "env TS_NODE_COMPILER_OPTIONS='{\"module\": \"commonjs\" }' mocha -r ts-node/register -r tsconfig-paths/register 'src/**/*.tests.ts' --timeout 240000 --exit"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@testcontainers/postgresql": "^10.2.1",
+    "@types/mocha": "^10.0.2",
+    "chai": "^4.3.10",
+    "pg": "^8.11.3",
+    "testcontainers": "^10.2.1",
+    "ts-mocha": "^10.0.0",
+    "ts-node": "^10.9.1",
+    "tslib": "^2.6.2"
+  }
+}

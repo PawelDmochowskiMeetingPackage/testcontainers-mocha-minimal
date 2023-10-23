@@ -1,0 +1,46 @@
+{
+  "ts-node": {
+    "require": [
+      "tsconfig-paths/register",
+    ]
+  },
+  "compileOnSave": false,
+  "compilerOptions": {
+    "incremental": true,
+    "target": "es2017",
+    "lib": [
+      "es2019",
+      "esnext.asynciterable"
+    ],
+    "typeRoots": [
+      "src/@types",
+      "node_modules/@types"
+    ],
+    "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "strictPropertyInitialization": false,
+    "forceConsistentCasingInFileNames": true,
+    "moduleResolution": "Node16",
+    "module": "Node16",
+    "pretty": true,
+    "sourceMap": true,
+    "skipLibCheck": true,
+    "declaration": false,
+    "outDir": "./dist",
+    "allowJs": true,
+    "noEmit": false,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "importHelpers": true,
+    "baseUrl": "src"
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.json",
+    ".env",
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
